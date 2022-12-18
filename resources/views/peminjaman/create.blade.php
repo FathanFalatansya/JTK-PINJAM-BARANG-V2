@@ -16,7 +16,7 @@
                     <div class="card-body">
 
                         <div class="form-group">
-                        <label for="InputNim">Nim</label>    
+                        <label for="InputNim">Data Peminjam</label>    
                         <select class="form-control" name="idMahasiswa" id="">
                             @foreach($mahasiswa as $m => $value)
                             <option value="{{$value->id}}">{{$value->Nim  }}  

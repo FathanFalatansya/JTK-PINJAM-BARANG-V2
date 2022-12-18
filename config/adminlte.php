@@ -249,9 +249,9 @@ return [
         ],
 
         [
-            'text' => 'Data Peminjaman',
+            'text' => 'Log Peminjaman',
             'url'  => '/datapeminjaman',
-            'icon'  => 'fa fa-database',
+            'icon'  => 'fa fa-history',
         ],
 
     ],

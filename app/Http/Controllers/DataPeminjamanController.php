@@ -72,13 +72,16 @@ class DataPeminjamanController extends Controller
             'Jumlah_Barang' => $request->input('JumlahBarang'),
         ]);     
 
-        // DataBarang::update([
-        //     'Jumlah_Barang' = 
-        // ]);
+        //   DataBarang::update([
+            
+        // //     $datapeminjaman = datapeminjaman::find($id);
+        // //     $databarang = DataBarang::find($id);
+        // //     $databarang->Jumlah_Barang = $databarang->Jumlah_Barang -= $datapeminjaman->Jumlah_Barang;
+        //   ]);
         
 
 
-        return redirect()->to('/home');
+        return redirect()->to('/home')->with('success_message','Peminjaman Berhasil Di Lakukan');
     }
 
     /**
@@ -133,6 +136,6 @@ class DataPeminjamanController extends Controller
     {
         $model = datapeminjaman::find($id);
         $model->delete();
-        return redirect('/datapeminjaman');
+        return redirect('/datapeminjaman')->with('success_message','Data Peminjaman Berhasil Di Hapus');
     }
 }

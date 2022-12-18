@@ -20,7 +20,7 @@
                                     <th>Nama Barang</th>
                                     <th>Kode Barang</th>
                                     <th>Jumlah Barang</th>
-                                    <th>Status</th>
+                                    <!-- <th>Status</th> -->
                                     <th>Opsi</th>
                                 </tr>   
                             </thead>
@@ -32,7 +32,7 @@
                                     <td>{{ $value->Nama_Barang }}</td>
                                     <td>{{ $value->Kode_Barang }}</td>
                                     <td>{{ $value->Jumlah_Barang }}</td>
-                                    <td>{{ $value->Status }}</td>
+                                    <!-- <td>{{ $value->Status }}</td> -->
                                     <td>
                                     
                                         <div class="row d-flex">                                               

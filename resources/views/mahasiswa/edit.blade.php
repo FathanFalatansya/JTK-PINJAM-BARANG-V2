@@ -22,13 +22,30 @@
                         </div>
 
                         <div class="form-group">
-                        <label for="InputNim">Nim</label>    
+                        <label for="InputNim">NIM</label>    
                         <input type="text" class="form-control" name="Nim" id="InputNim" value="{{ $model->Nim }}"><br/>
                         </div>
 
                         <div class="form-group">
                         <label for="InputKelas">Kelas</label>    
-                        <input type="text" class="form-control" name="Kelas" id="InputKelas" value="{{ $model->Kelas }}"><br/>
+                        <select class="form-control" name="Kelas" id="">
+                           
+                           <option value="D3-1A">D3-1A</option>
+                           <option value="D3-1B">D3-1B</option>
+                           <option value="D4-1A">D4-1A</option>
+                           <option value="D4-1B">D4-1B</option>
+                           <option value="D3-2A">D3-2A</option>
+                           <option value="D3-2B">D3-2B</option>
+                           <option value="D4-2A">D4-2A</option>
+                           <option value="D4-2B">D4-2B</option>
+                           <option value="D3-3A">D3-3A</option>
+                           <option value="D3-3B">D3-3B</option>
+                           <option value="D4-3A">D4-3A</option>
+                           <option value="D4-3B">D4-3B</option>
+                           <option value="D4-4A">D4-4A</option>
+                           <option value="D4-4A">D4-4B</option>
+                           
+                       </select>
                         </div>
                     
 

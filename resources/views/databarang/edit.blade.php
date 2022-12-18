@@ -31,11 +31,6 @@
                         <input type="text" class="form-control" name="JumlahBarang" id="InputJumlahBarang" value="{{ $model->Jumlah_Barang }}"><br/>
                         </div>
 
-                        <div class="form-group">
-                        <label for="InputStatus">Jumlah Barang</label>    
-                        <input type="text" class="form-control" name="Status" id="InputStatus" value="{{ $model->Status }}"><br/>
-                        </div>
-                    
 
                     </div>
 

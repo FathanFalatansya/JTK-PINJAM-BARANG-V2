@@ -17,7 +17,7 @@ class CreateMahasiswaTable extends Migration
             $table->id();
             $table->string('Nama', 30);
             $table->string('Nim', 9)->unique();
-            $table->string('Kelas', 3);
+            $table->string('Kelas', 6);
             $table->timestamps();
         });
     }

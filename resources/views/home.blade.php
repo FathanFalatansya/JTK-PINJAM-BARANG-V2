@@ -42,8 +42,9 @@
                                                 <tr class="table-active">
                                                     <th>No.</th>
                                                     <th>Nama Barang</th>
+                                                    <th>Kode Barang</th>
                                                     <th>Jumlah Barang</th>
-                                                    <th>Status</th>
+                                                    <!-- <th>Status</th> -->
                                                 </tr>   
                                             </thead>                    
                                             <tbody>
@@ -51,8 +52,9 @@
                                                     <tr>
                                                         <td>{{$key+1}}</td>
                                                         <td>{{ $value->Nama_Barang }}</td>
+                                                        <td>{{ $value->Kode_Barang }}</td>
                                                         <td>{{ $value->Jumlah_Barang }}</td>
-                                                        <td>{{ $value->Status }}</td>
+                                                        <!-- <td>{{ $value->Status }}</td> -->
                                                         <!-- <td> -->
                                                         
                                                             <!-- <div class="row d-flex">                                               

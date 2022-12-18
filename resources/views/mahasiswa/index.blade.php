@@ -16,9 +16,9 @@
                         <a class="btn btn-primary mb-2" href="{{ 'Mahasiswa/create' }}">Tambah data</a>
                             <thead>
                                 <tr class="table-active">
-                                    <th>No.</th>
-                                    <th>Nama</th>
+                                    
                                     <th>Nim</th>
+                                    <th>Nama</th>
                                     <th>Kelas</th>
                                     <th>Opsi</th>
                                 </tr>   
@@ -27,9 +27,9 @@
                             <tbody>
                             @foreach($data as $key=>$value)
                                 <tr>
-                                    <td>{{$key+1}}</td>
-                                    <td>{{ $value->Nama }}</td>
+                                    <!-- <td>{{$key+1}}</td> -->
                                     <td>{{ $value->Nim }}</td>
+                                    <td>{{ $value->Nama }}</td>
                                     <td>{{ $value->Kelas }}</td>
                                     <td>
                                     

@@ -3,7 +3,7 @@
 @section('title', 'Data Peminjaman')
 
 @section('content_header')
-    <h1 class="m-0 text-dark">Data Peminjaman</h1>
+    <h1 class="m-0 text-dark">Log Data Peminjaman</h1>
 @stop
 
 @section('content')
@@ -19,9 +19,11 @@
                                     <th>No.</th>
                                     <th>Nim</th>
                                     <th>Nama</th>
+                                    <th>Kelas</th>
                                     <th>Nama Barang</th>
                                     <th>Kode Barang</th>
                                     <th>Jumlah Barang</th>
+                                    <th>Waktu Peminjaman</th>
                                     <th>Opsi</th>
                                 </tr>   
                             </thead>
@@ -32,20 +34,25 @@
                                     <td>{{$key+1}}</td>
                                     <td>{{ $value->Nim }}</td>
                                     <td>{{ $value->Nama }}</td>
+                                    <td>{{ $value->Kelas }}</td>
                                     <td>{{ $value->Nama_Barang }}</td>
                                     <td>{{ $value->Kode_Barang }}</td>
                                     <td>{{ $value->Jumlah_Barang }}</td>
+                                    <td>{{ $value->created_at }}</td>
                                     <td>
                                     
                                         <div class="row d-flex">                                               
                                             <a href="{{ url('datapeminjaman/'.$value->id.'/edit') }}" class="btn btn-info mb-2 mr-1" >
                                                 Edit
                                              </a>  
-                                            <form action="{{ url('datapeminjaman/'.$value->id)}}" onclick="notificationBeforeDelete(event, this)" method="POST">
+                                             <a href="{{route('datapeminjaman.destroy',$value->id)}}" onclick="notificationBeforeDelete(event, this)" class="btn btn-danger mb-2 mr-1" >
+                                                Hapus
+                                             </a>  
+                                            <!-- <form action="{{ url('datapeminjaman/'.$value->id)}}" onclick="notificationBeforeDelete(event, this)" method="POST">
                                                  @csrf
                                                 <input type="hidden" name="_method" value="DELETE">
                                                 <button class="btn btn-danger" type="submit" >Delete</button>
-                                            </form>                                                                                                                                                                   
+                                            </form>                                                                                                                                                                    -->
                                         </div>
                                     
                                    
@@ -63,7 +70,7 @@
 @stop
 
 @push('js')
-    <form action="{{route('datapeminjaman.destroy',$value->id)}}" id="delete-form" method="post">
+    <form action="" id="delete-form" method="post">
         @method('delete')
         @csrf
     </form>

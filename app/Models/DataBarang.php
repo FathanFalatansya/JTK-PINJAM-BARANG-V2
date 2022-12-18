@@ -9,6 +9,6 @@ class DataBarang extends Model
 {
     protected $table = "DataBarang";
     protected $primarykey ="id";
-    protected $fillable = ['id', 'Nama_Barang', 'Kode_Barang','Jumlah_Barang', 'Status'];
+    protected $fillable = ['id', 'Nama_Barang', 'Kode_Barang','Jumlah_Barang'];
 
 }

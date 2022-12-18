@@ -17,9 +17,9 @@ class CreateDataBarangTable extends Migration
             $table->id();
             $table->string('Nama_Barang', 30);
             $table->string('Kode_Barang', 9);
-            $table->string('Jumlah_Barang', 3);
-            $table->string('Status', 30);
-            $table->timestamps();
+            $table->integer('Jumlah_Barang');
+            $table->timestamp(column:'created_at')->useCurrent();
+            $table->timestamp(column:'updated_at')->useCurrent();
         });
     }
 
