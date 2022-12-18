@@ -20,7 +20,7 @@ class DataPeminjamanController extends Controller
         $data = DB::table('datapeminjaman')
         ->join('mahasiswa', 'datapeminjaman.IDMahasiswa', '=', 'mahasiswa.id')
         ->join('databarang', 'datapeminjaman.IDBarang', '=', 'databarang.id')
-        ->select('datapeminjaman.*', 'mahasiswa.Nama','mahasiswa.Nim','mahasiswa.Kelas')
+        ->select('datapeminjaman.*', 'mahasiswa.Nama','mahasiswa.Nim','mahasiswa.Kelas','databarang.Nama_Barang','databarang.Kode_Barang')
         ->get();
         
     

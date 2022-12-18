@@ -18,6 +18,8 @@
                                 <tr class="table-active">
                                     <th>No.</th>
                                     <th>Nim</th>
+                                    <th>Nama</th>
+                                    <th>Nama Barang</th>
                                     <th>Kode Barang</th>
                                     <th>Jumlah Barang</th>
                                     <th>Opsi</th>
@@ -28,8 +30,10 @@
                             @foreach($data as $key=>$value)
                                 <tr>
                                     <td>{{$key+1}}</td>
-                                    <td>{{ $value->IDMahasiswa }}</td>
-                                    <td>{{ $value->IDBarang }}</td>
+                                    <td>{{ $value->Nim }}</td>
+                                    <td>{{ $value->Nama }}</td>
+                                    <td>{{ $value->Nama_Barang }}</td>
+                                    <td>{{ $value->Kode_Barang }}</td>
                                     <td>{{ $value->Jumlah_Barang }}</td>
                                     <td>
                                     
